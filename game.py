@@ -14,4 +14,5 @@ elif (user == "rock" and computer == "scissors") or \
 else:
     print(f"You lose! {computer} beats {user}.")
 
+print("hello")
 main()
