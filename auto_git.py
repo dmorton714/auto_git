@@ -7,7 +7,7 @@ def run_git_command(command):
     return result.stdout
 
 
-def main():
+def auto_git():
     # Step 1: Check for changes using git status
     status_output = run_git_command(['git', 'status', '--porcelain'])
 
@@ -28,6 +28,10 @@ def main():
         # Step 5: Push the changes
         push_output = run_git_command(['git', 'push'])
         print(push_output)
+
+
+def main():
+    auto_git()
 
 
 if __name__ == "__main__":
